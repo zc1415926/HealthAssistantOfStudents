@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::post('student/add', array(
+    'as'    => 'student.add',
+    'uses'  => 'StudentController@add'
+));
