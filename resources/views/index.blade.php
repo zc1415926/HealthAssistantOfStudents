@@ -29,14 +29,14 @@
                             <div class="control-group">
                                 <label class="control-label" for="inputName">姓名：</label>
                                 <div class="controls">
-                                    <input type="text" id="inputName" name="inputName" placeholder="姓名">
+                                    <input type="text" id="inputName" name="name" placeholder="姓名">
                                 </div>
                             </div>
 
                             <div class="control-group">
                                 <label class="control-label" for="inputSex">姓别：</label>
                                 <div class="controls">
-                                    <select id="inputSex" name="inputSex">
+                                    <select id="inputSex" name="sex">
                                         <option>女</option>
                                         <option>男</option>
                                     </select>
@@ -45,19 +45,19 @@
                             <div class="control-group">
                                 <label class="control-label" for="inputAge">年龄：</label>
                                 <div class="controls">
-                                    <input type="text" id="inputEmail" name="inputEmail" placeholder="Email">
+                                    <input type="text" id="inputAge" name="age" placeholder="Email">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="inputHeight">身高：</label>
                                 <div class="controls">
-                                    <input type="text" id="inputHeight" name="inputHeight" placeholder="身高">
+                                    <input type="text" id="inputHeight" name="height" placeholder="身高">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="inputWeight">体重：</label>
                                 <div class="controls">
-                                    <input type="text" id="inputWeight" name="inputWeight" placeholder="体重">
+                                    <input type="text" id="inputWeight" name="weight" placeholder="体重">
                                 </div>
                             </div>
                             <div class="control-group">

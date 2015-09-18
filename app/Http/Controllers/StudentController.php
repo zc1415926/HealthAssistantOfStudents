@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Student;
 
 class StudentController extends Controller
 {
@@ -26,6 +27,7 @@ class StudentController extends Controller
      */
     public function add(Request $request)
     {
-        dd($request);
+        $student = Student::create($request->all());
+        dd($student);
     }
 }
