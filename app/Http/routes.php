@@ -19,3 +19,8 @@ Route::post('student/add', array(
     'as'    => 'student.add',
     'uses'  => 'StudentController@add'
 ));
+
+Route::get('admin', array(
+    'as'    => 'student.admin',
+    'uses'  => 'StudentController@index'
+));

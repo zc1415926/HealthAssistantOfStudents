@@ -11,13 +11,15 @@ use App\Student;
 class StudentController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * 列出所有已输入的学生信息
      *
      * @return Response
      */
     public function index()
     {
-        //
+        $students = Student::all();
+
+        return view('students.index', compact('students'));
     }
 
     /**
