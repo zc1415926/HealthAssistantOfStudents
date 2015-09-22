@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Student;
+use Laracasts\Flash\Flash;
 
 class StudentController extends Controller
 {
@@ -31,5 +32,13 @@ class StudentController extends Controller
     {
         $student = Student::create($request->all());
         dd($student);
+    }
+
+    public function delete(Request $request)
+    {
+        $student = Student::destroy($request['student-id']);
+
+        Flash::success("学生“" . $request['student-name'] . "”已经删除");
+        return back();
     }
 }

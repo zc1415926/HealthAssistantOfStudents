@@ -20,6 +20,11 @@ Route::post('student/add', array(
     'uses'  => 'StudentController@add'
 ));
 
+Route::post('student/delete', array(
+    'as'    => 'student.delete',
+    'uses'  => 'StudentController@delete'
+));
+
 Route::get('admin', array(
     'as'    => 'student.admin',
     'uses'  => 'StudentController@index'
