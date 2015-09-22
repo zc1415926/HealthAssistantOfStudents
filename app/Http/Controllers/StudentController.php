@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
 use App\Student;
 use Laracasts\Flash\Flash;
 
@@ -31,7 +30,14 @@ class StudentController extends Controller
     public function add(Request $request)
     {
         $student = Student::create($request->all());
-        dd($student);
+        //dd($student);
+        Flash::success("你的信息（" . $student->name . " "
+                                  . $student->sex . " "
+                                  . $student->age . " "
+                                  . $student->height . " "
+                                  . $student->weight . "）已经成功添加");
+
+        return back();
     }
 
     public function delete(Request $request)

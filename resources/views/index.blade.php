@@ -33,6 +33,10 @@
             </div>
         </header>
         <div class="container">
+
+            <br>
+            @include('flash::message')
+
             <div class="row">
                 <div class="span3"></div>
                 <div class="span3">
