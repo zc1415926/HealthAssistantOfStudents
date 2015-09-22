@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('student', function () {
+    return view('student.index');
 });
 
 Route::post('student/add', array(
@@ -25,7 +25,7 @@ Route::post('student/delete', array(
     'uses'  => 'StudentController@delete'
 ));
 
-Route::get('admin', array(
+Route::get('student/admin', array(
     'as'    => 'student.admin',
-    'uses'  => 'StudentController@index'
+    'uses'  => 'StudentController@admin'
 ));
