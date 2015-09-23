@@ -29,3 +29,7 @@ Route::get('student/admin', array(
     'as'    => 'student.admin',
     'uses'  => 'StudentController@admin'
 ));
+
+Route::get('comment', function(){
+    return view('comment.index');
+});
