@@ -11,6 +11,8 @@
 |
 */
 
+//----------- The block of student ------------------------------------
+
 Route::get('student', function () {
     return view('student.index');
 });
@@ -30,6 +32,8 @@ Route::get('student/admin', array(
     'uses'  => 'StudentController@admin'
 ));
 
+//----------- The block of comment ------------------------------------
+
 Route::get('comment', function(){
     return view('comment.index');
 });
@@ -37,4 +41,14 @@ Route::get('comment', function(){
 Route::post('comment/add', array(
     'as'    => 'comment.add',
     'uses'  => 'CommentController@add'
+));
+
+Route::get('comment/admin', array(
+    'as'    => 'comment.admin',
+    'uses'  => 'CommentController@admin'
+));
+
+Route::post('comment/delete', array(
+    'as'    => 'comment.delete',
+    'uses'  => 'CommentController@delete'
 ));

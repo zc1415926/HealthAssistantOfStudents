@@ -19,4 +19,20 @@ class CommentController extends Controller
 
         return back();
     }
+
+    public function admin()
+    {
+        $comments = Comment::all();
+
+        return view('comment.admin', compact('comments'));
+    }
+
+    public function delete(Request $request)
+    {
+        Comment::destroy($request['commentId']);
+
+        Flash::success("留言已经删除！");
+
+        return back();
+    }
 }
