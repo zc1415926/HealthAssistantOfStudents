@@ -33,3 +33,8 @@ Route::get('student/admin', array(
 Route::get('comment', function(){
     return view('comment.index');
 });
+
+Route::post('comment/add', array(
+    'as'    => 'comment.add',
+    'uses'  => 'CommentController@add'
+));
