@@ -47,7 +47,7 @@
             <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
             <button class="btn btn-danger" onclick="OnDeleteStudentClicked({{$student->id}})">删除</button>
         </div>
-        <form method="post" action="student/delete" id="form-delete-student">
+        <form method="post" action="/student/delete" id="form-delete-student">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <input type="hidden" name="student-id" value="{{$student->id}}">
             <input type="hidden" name="student-name" value="{{$student->name}}">
