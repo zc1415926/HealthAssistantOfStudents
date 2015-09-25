@@ -30,12 +30,20 @@ class StudentController extends Controller
     public function add(Request $request)
     {
         $student = Student::create($request->all());
-        //dd($student);
-        Flash::success("你的信息（" . $student->name . " "
-                                  . $student->sex . " "
-                                  . $student->age . " "
-                                  . $student->height . " "
-                                  . $student->weight . "）已经成功添加");
+
+        if($student)
+        {
+            Flash::success("你的信息（" . $student->name . " "
+                . $student->sex . " "
+                . $student->age . " "
+                . $student->height . " "
+                . $student->weight . "）已经成功添加");
+        }
+        else
+        {
+            Flash::error("未成功添加学生信息");
+        }
+
 
         return back();
     }
@@ -44,7 +52,15 @@ class StudentController extends Controller
     {
         $student = Student::destroy($request['student-id']);
 
-        Flash::success("学生“" . $request['student-name'] . "”已经删除");
+        if($student)
+        {
+            Flash::success("学生“" . $request['student-name'] . "”已经删除");
+        }
+        else
+        {
+            Flash::error("未成功删除学生");
+        }
+
         return back();
     }
 }
