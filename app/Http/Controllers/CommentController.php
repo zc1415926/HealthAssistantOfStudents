@@ -14,8 +14,16 @@ class CommentController extends Controller
     {
         $comment = Comment::create($request->all());
 
-        Flash::success("你的留言（" . $comment->name . " "
-            . $comment->comment . "）已经成功提交");
+        if($comment)
+        {
+            Flash::success("你的留言（" . $comment->name . " "
+                . $comment->comment . "）已经成功提交");
+        }
+        else
+        {
+            Flash::error("留言提交失败！");
+        }
+
 
         return back();
     }
@@ -29,9 +37,16 @@ class CommentController extends Controller
 
     public function delete(Request $request)
     {
-        Comment::destroy($request['commentId']);
+        $comment = Comment::destroy($request['commentId']);
 
-        Flash::success("留言已经删除！");
+        if($comment)
+        {
+            Flash::success("留言已经删除！");
+        }
+        else
+        {
+            Flash::error("留言删除失败！");
+        }
 
         return back();
     }
