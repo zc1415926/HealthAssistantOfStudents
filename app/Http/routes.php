@@ -32,6 +32,11 @@ Route::get('student/admin', array(
     'uses'  => 'StudentController@admin'
 ));
 
+Route::get('student/export', array(
+    'as'    => 'student.export',
+    'uses'  => 'StudentController@export'
+));
+
 //----------- The block of comment ------------------------------------
 
 Route::get('comment', function(){

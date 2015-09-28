@@ -147,6 +147,8 @@ return [
 
         Laracasts\Flash\FlashServiceProvider::class,
 
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+
     ],
 
     /*
@@ -196,7 +198,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'Flash'     => Laracasts\Flash\Flash::class
+        'Flash'     => Laracasts\Flash\Flash::class,
+
+        'Excel'     => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];
