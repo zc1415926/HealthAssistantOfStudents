@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Student;
 use Laracasts\Flash\Flash;
+use Maatwebsite\Excel\Facades\Excel;
 
 class StudentController extends Controller
 {
@@ -15,7 +16,7 @@ class StudentController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth', ['only' => 'admin']);
+        $this->middleware('auth', ['only' => ['admin', 'export']]);
     }
 
     /**
@@ -69,5 +70,15 @@ class StudentController extends Controller
         }
 
         return back();
+    }
+
+
+    public function export()
+    {
+        Excel::create('students', function($excel){
+            $excel->sheet('student', function($sheet){
+                $sheet->fromArray(Student::select('name', 'age', 'height', 'weight')->get());
+            });
+        })->export('xls');
     }
 }
