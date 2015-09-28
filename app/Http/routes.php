@@ -52,3 +52,19 @@ Route::post('comment/delete', array(
     'as'    => 'comment.delete',
     'uses'  => 'CommentController@delete'
 ));
+
+//----------- The block of authentication ------------------------------------
+
+Route::get('auth/index', function () {
+    return view('auth.index');
+});
+
+Route::post('auth/login', array(
+    'as'    => 'auth.login',
+    'uses'  => 'AuthController@login'
+));
+
+Route::get('auth/logout', array(
+    'as'    => 'auth.logout',
+    'uses'  => 'AuthController@logout'
+));

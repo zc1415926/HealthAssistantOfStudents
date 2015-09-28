@@ -11,6 +11,14 @@ use Laracasts\Flash\Flash;
 class StudentController extends Controller
 {
     /**
+     * StudentController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'admin']);
+    }
+
+    /**
      * 列出所有已输入的学生信息
      *
      * @return Response
@@ -43,7 +51,6 @@ class StudentController extends Controller
         {
             Flash::error("未成功添加学生信息");
         }
-
 
         return back();
     }
