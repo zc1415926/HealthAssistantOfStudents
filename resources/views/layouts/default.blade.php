@@ -9,6 +9,14 @@
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="http://v2.bootcss.com/assets/css/docs.css" rel="stylesheet">
 
+    <!--[if lte IE 6]>
+    <!-- bsie css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-ie6.min.css">
+
+    <!-- bsie 额外的 css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="/css/ie.css">
+    <![endif]-->
+
     <style>
         body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
     </style>
@@ -16,6 +24,10 @@
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
     <script src="http://cdn.bootcss.com/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <!--[if lte IE 6]>
+    <!-- bsie js 补丁只在IE6中才执行 -->
+    <script type="text/javascript" src="/js/bootstrap-ie.js"></script>
+    <![endif]-->
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
