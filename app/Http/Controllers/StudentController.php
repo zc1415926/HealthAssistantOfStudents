@@ -44,7 +44,6 @@ class StudentController extends Controller
             Flash::error("未成功添加学生信息");
         }
 
-
         return back();
     }
 

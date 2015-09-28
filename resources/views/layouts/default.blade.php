@@ -51,6 +51,19 @@
                         <a href="./kechengzongjie.html">课程总结</a>
                     </li>
                 </ul>
+                <ul class="nav pull-right">
+                    @if(!Auth::check())
+                        <li><a href="/auth">登录</a></li>
+                    @else
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()['showname']}} <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/auth/logout">登出</a></li>
+                            </ul>
+                        </li>
+                    @endif
+
+                </ul>
             </div>
         </div>
     </div>
