@@ -33,6 +33,9 @@
                 @endforeach
             </tbody>
         </table>
+
+        <hr>
+        <a href="/student/export" class="btn btn-large btn-primary">导出学生信息到Excel</a>
     </div>
 
     <div id="modalDeleteStudent" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
