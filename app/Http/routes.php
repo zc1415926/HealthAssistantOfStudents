@@ -55,7 +55,7 @@ Route::post('comment/delete', array(
 
 //----------- The block of authentication ------------------------------------
 
-Route::get('auth', function () {
+Route::get('auth/index', function () {
     return view('auth.index');
 });
 

@@ -10,6 +10,14 @@ use Laracasts\Flash\Flash;
 
 class CommentController extends Controller
 {
+    /**
+     * CommentController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'admin']);
+    }
+
     public function add(Request $request)
     {
         $comment = Comment::create($request->all());

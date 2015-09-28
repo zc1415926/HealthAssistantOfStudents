@@ -11,6 +11,14 @@ use Laracasts\Flash\Flash;
 class StudentController extends Controller
 {
     /**
+     * StudentController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => 'admin']);
+    }
+
+    /**
      * 列出所有已输入的学生信息
      *
      * @return Response

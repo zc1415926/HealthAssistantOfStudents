@@ -53,7 +53,7 @@
                 </ul>
                 <ul class="nav pull-right">
                     @if(!Auth::check())
-                        <li><a href="/auth">登录</a></li>
+                        <li><a href="/auth/index">登录</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()['showname']}} <b class="caret"></b></a>
