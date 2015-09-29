@@ -72,12 +72,19 @@ class StudentController extends Controller
         return back();
     }
 
-
     public function export()
     {
         Excel::create('students', function($excel){
             $excel->sheet('student', function($sheet){
-                $sheet->fromArray(Student::select('name', 'age', 'height', 'weight')->get());
+                $sheet->fromArray(Student::select('num', 'sex', 'height', 'weight')->get());
+                $sheet->row(1, array("序号", "性别", "身高（m）", "体重（kg）"));
+                $sheet->setWidth(array(
+                    'A'     =>  15,
+                    'B'     =>  15,
+                    'C'     =>  15,
+                    'D'     =>  15,
+                ));
+                
             });
         })->export('xls');
     }
