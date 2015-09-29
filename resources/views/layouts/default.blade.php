@@ -11,6 +11,12 @@
 
     <style>
         body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+        .tscplayer_inline {
+            position: static;
+            margin: 30px;
+            width: 854px;
+            height: 466px;
+            z-index: auto;}
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
@@ -30,25 +36,25 @@
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li class="active">
-                        <a href="./index.html">课程首页</a>
+                        <a href="/">课程首页</a>
                     </li>
                     <li class="">
-                        <a href="./qingjingdaoru.html">情景导入</a>
+                        <a href="/qingjingdaoru">情景导入</a>
                     </li>
                     <li class="">
-                        <a href="./xinfarumen.html">入门心法</a>
+                        <a href="/rumenxinfa">入门心法</a>
                     </li>
                     <li class="">
-                        <a href="./feishengmiji.html">飞升秘籍</a>
+                        <a href="/feishengmiji">飞升秘籍</a>
                     </li>
                     <li class="">
-                        <a href="./jiujiaoyi.html">究极奥义</a>
+                        <a href="/jiujiaoyi">究极奥义</a>
                     </li>
                     <li class="">
-                        <a href="./wulindahui.html">武林大会</a>
+                        <a href="/wulindahui">武林大会</a>
                     </li>
                     <li class="">
-                        <a href="./kechengzongjie.html">课程总结</a>
+                        <a href="/kechengzongjie">课程总结</a>
                     </li>
                 </ul>
                 <ul class="nav pull-right">
@@ -58,6 +64,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()['showname']}} <b class="caret"></b></a>
                             <ul class="dropdown-menu">
+                                <li><a href="/student/admin">学生管理</a></li>
+                                <li><a href="/comment/admin">留言管理</a></li>
+                                <li class="divider"></li>
                                 <li><a href="/auth/logout">登出</a></li>
                             </ul>
                         </li>
