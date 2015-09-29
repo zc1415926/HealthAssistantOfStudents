@@ -22,10 +22,7 @@
 
             <ul class="masthead-links">
                 <li>
-
-                    <!-- <a href="./quanbantizhongbiao.xls" onclick="saveImage.document.execCommand('saveAs');"></a>-->
-                    <a href="/assets/quanbantizhongbiao.xls">点我下载“全班身高体重表”</a>
-
+                    <a href="/assets/quanbantizhongbiao.xls">点我输入健康信息</a>
                 </li>
             </ul>
         </div>

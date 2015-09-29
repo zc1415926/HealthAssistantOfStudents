@@ -11,6 +11,12 @@
 
     <style>
         body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+        .tscplayer_inline {
+            position: static;
+            margin: 30px;
+            width: 854px;
+            height: 466px;
+            z-index: auto;}
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
