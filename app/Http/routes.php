@@ -11,6 +11,34 @@
 |
 */
 
+Route::get('/', function () {
+    return view('index.index');
+});
+
+Route::get('feishengmiji', function () {
+    return view('index.feishengmiji');
+});
+
+Route::get('jiujiaoyi', function () {
+    return view('index.jiujiaoyi');
+});
+
+Route::get('kechengzongjie', function () {
+    return view('index.kechengzongjie');
+});
+
+Route::get('qingjingdaoru', function () {
+    return view('index.qingjingdaoru');
+});
+
+Route::get('rumenxinfa', function () {
+    return view('index.rumenxinfa');
+});
+
+Route::get('wulindahui', function () {
+    return view('index.wulindahui');
+});
+
 //----------- The block of student ------------------------------------
 
 Route::get('student', function () {
