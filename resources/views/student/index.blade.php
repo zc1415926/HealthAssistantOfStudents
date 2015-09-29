@@ -44,16 +44,15 @@
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
                     <div class="control-group">
-                        <label class="control-label" for="inputName">姓名：</label>
+                        <label class="control-label" for="inputNum">序号：</label>
 
                         <div class="controls">
-                            <input type="text" id="inputName" name="name" placeholder="姓名">
+                            <input type="text" id="inputNum" name="num" placeholder="序号">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label" for="inputSex">姓别：</label>
-
                         <div class="controls">
                             <select id="inputSex" name="sex">
                                 <option>女</option>
@@ -64,23 +63,20 @@
 
                     <div class="control-group">
                         <label class="control-label" for="inputAge">年龄：</label>
-
                         <div class="controls">
-                            <input type="text" id="inputAge" name="age" placeholder="Email">
+                            <input type="text" id="inputAge" name="age" placeholder="年龄">
                         </div>
                     </div>
 
                     <div class="control-group">
-                        <label class="control-label" for="inputHeight">身高：</label>
-
+                        <label class="control-label" for="inputHeight">身高(cm)：</label>
                         <div class="controls">
                             <input type="text" id="inputHeight" name="height" placeholder="身高">
                         </div>
                     </div>
 
                     <div class="control-group">
-                        <label class="control-label" for="inputWeight">体重：</label>
-
+                        <label class="control-label" for="inputWeight">体重(kg)：</label>
                         <div class="controls">
                             <input type="text" id="inputWeight" name="weight" placeholder="体重">
                         </div>

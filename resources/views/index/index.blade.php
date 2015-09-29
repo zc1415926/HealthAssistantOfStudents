@@ -22,7 +22,7 @@
 
             <ul class="masthead-links">
                 <li>
-                    <a href="/assets/quanbantizhongbiao.xls">点我输入健康信息</a>
+                    <a href="/student">点我输入健康信息</a>
                 </li>
             </ul>
         </div>
