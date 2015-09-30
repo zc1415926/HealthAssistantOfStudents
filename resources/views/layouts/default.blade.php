@@ -39,7 +39,7 @@
                         <a href="/">课程首页</a>
                     </li>
                     <li class="">
-                        <a href="/qingjingdaoru">情景导入</a>
+                        <a href="/qingjingdaoru">风起云涌</a>
                     </li>
                     <li class="">
                         <a href="/rumenxinfa">入门心法</a>
@@ -54,7 +54,7 @@
                         <a href="/wulindahui">武林大会</a>
                     </li>
                     <li class="">
-                        <a href="/kechengzongjie">课程总结</a>
+                        <a href="/kechengzongjie">一统江湖</a>
                     </li>
                 </ul>
                 <ul class="nav pull-right">
