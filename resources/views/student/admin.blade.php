@@ -14,7 +14,6 @@
                 <tr>
                     <th>序号</th>
                     <th>性别</th>
-                    <th>年龄</th>
                     <th>身高（cm）</th>
                     <th>体重（kg）</th>
                     <th>操作</th>
@@ -24,7 +23,6 @@
                 @foreach($students as $student)
                     <tr><td>{{$student->num}}</td>
                         <td>{{$student->sex}}</td>
-                        <td>{{$student->age}}</td>
                         <td>{{$student->height}}</td>
                         <td>{{$student->weight}}</td>
                         <td><a href="#" role="button" class="icon-remove uk-icon-hover"

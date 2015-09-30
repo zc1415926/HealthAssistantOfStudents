@@ -62,13 +62,6 @@
                     </div>
 
                     <div class="control-group">
-                        <label class="control-label" for="inputAge">年龄：</label>
-                        <div class="controls">
-                            <input type="text" id="inputAge" name="age" placeholder="年龄">
-                        </div>
-                    </div>
-
-                    <div class="control-group">
                         <label class="control-label" for="inputHeight">身高(cm)：</label>
                         <div class="controls">
                             <input type="text" id="inputHeight" name="height" placeholder="身高">

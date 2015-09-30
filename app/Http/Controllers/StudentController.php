@@ -42,9 +42,8 @@ class StudentController extends Controller
 
         if($student)
         {
-            Flash::success("你的信息（" . $student->name . " "
+            Flash::success("你的信息（" . $student->num . " "
                 . $student->sex . " "
-                . $student->age . " "
                 . $student->height . " "
                 . $student->weight . "）已经成功添加");
         }
@@ -84,7 +83,7 @@ class StudentController extends Controller
                     'C'     =>  15,
                     'D'     =>  15,
                 ));
-                
+
             });
         })->export('xls');
     }

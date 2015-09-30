@@ -16,7 +16,6 @@ class CreateStudentsTable extends Migration
             $table->increments('id');
             $table->unsignedTinyInteger('num');
             $table->string('sex');
-            $table->unsignedTinyInteger('age');
             $table->unsignedTinyInteger('height');
             $table->unsignedTinyInteger('weight');
             $table->timestamps();
