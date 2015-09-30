@@ -16,12 +16,12 @@ class StudentsTableSeeder extends Seeder
                 [
                     'num'      => '7',
                     'sex'       => '男',
-                    'height'    => '168',
+                    'height'    => '1.68',
                     'weight'    => '65',
                 ],[
                     'num'      => '19',
                     'sex'       => '女',
-                    'height'    => '158',
+                    'height'    => '1.58',
                     'weight'    => '45',
                 ]
             ));

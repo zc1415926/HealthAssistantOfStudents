@@ -14,7 +14,7 @@
                 <tr>
                     <th>序号</th>
                     <th>性别</th>
-                    <th>身高（cm）</th>
+                    <th>身高（m）</th>
                     <th>体重（kg）</th>
                     <th>操作</th>
                 </tr>

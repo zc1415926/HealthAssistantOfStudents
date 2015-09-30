@@ -38,14 +38,19 @@ class StudentController extends Controller
      */
     public function add(Request $request)
     {
-        $student = Student::create($request->all());
+        $student = Student::create([
+            'num'       => $request['num'],
+            'sex'       => $request['sex'],
+            'height'    => $request['height'] / 100,
+            'weight'    => $request['weight']
+        ]);
 
         if($student)
         {
-            Flash::success("你的信息（" . $student->num . " "
+            Flash::success("你的信息（" . $student->num . "号 "
                 . $student->sex . " "
-                . $student->height . " "
-                . $student->weight . "）已经成功添加");
+                . $student->height * 100 . "cm "
+                . $student->weight . "kg）已经成功添加");
         }
         else
         {
