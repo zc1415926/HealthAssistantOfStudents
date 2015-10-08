@@ -8,14 +8,17 @@
 
     <div class="container">
         <div class="row">
-            <div class="span6 offset3">
+            <div class="span8 offset2">
                 <div class="page-header">
                     <h1>大会议程</h1>
                 </div>
 
                 <p class="lead">1. 判断自己和组内成员BMI值是否达标。</p>
+            </div>
+            <div class="span10 offset2">
                 <img src="img/bmi.jpg">
-
+            </div>
+            <div class="span8 offset2">
                 <p class="lead">2. 小组合作探讨未达标的原因，利用网络搜索答案等方法，提出如何达标的方案。</p></p>
                 <p class="lead">3. <a href="/comment">点我提交“达标方案”。</a></p>
             </div>
