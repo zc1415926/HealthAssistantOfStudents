@@ -17,7 +17,6 @@
                 <img src="img/bmi.jpg">
 
                 <p class="lead">2. 小组合作探讨未达标的原因，利用网络搜索答案等方法，提出如何达标的方案。</p></p>
-                <p class="lead">3. 武林大会：在班级博客中公布达标方案。</p>
                 <p class="lead">3. <a href="/comment">点我提交“达标方案”。</a></p>
             </div>
         </div>
