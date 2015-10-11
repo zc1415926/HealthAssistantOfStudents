@@ -9,7 +9,7 @@
 
     <div class="container">
         <div class="marketing">
-            <h1>总结项目</h1>
+            <h1>江湖总结</h1>
             <br>
         </div>
         <div class="row">

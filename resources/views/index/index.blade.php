@@ -3,8 +3,8 @@
     <div class="jumbotron masthead">
         <div class="container">
             <br><br><br>
-            <h1>环肥燕瘦</h1>
-            <p>数据的计算与分析</p>
+            <h1>数据的计算与分析</h1>
+            <p></p>
 
             <br><br><br><br><br>
 
