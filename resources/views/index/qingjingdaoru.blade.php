@@ -20,12 +20,12 @@
                 </p>
 
                 <div class="row-fluid">
-                    <div class="span5 offset2">
+                    <div class="span5">
                         <img class="" src="/img/pang.jpg">
 
                         <h2 align="center">杨玉环</h2>
                     </div>
-                    <div class="span5">
+                    <div class="span5 offset2">
                         <img class="" src="/img/shou.jpg">
 
                         <h2 align="center">赵飞燕</h2>
