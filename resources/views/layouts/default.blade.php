@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="_token" content="{{ csrf_token() }}">
@@ -17,6 +17,10 @@
             width: 854px;
             height: 466px;
             z-index: auto;}
+
+        .iframe{
+            vertical-align: middle;
+        }
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
