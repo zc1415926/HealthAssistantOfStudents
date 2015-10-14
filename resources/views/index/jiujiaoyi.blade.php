@@ -12,13 +12,13 @@
             <p class="marketing-byline">第一次筛选：筛选与自己同性别同学的数据</p>
             <div class="row-fluid">
                 <div class="span12">
-                    <img class="" src="img/jiujiaoyi/step1.png">
+                    <img class="" src="img/jiujiaoyi/step1.jpg">
                 </div>
             </div>
             <br>
             <div class="row-fluid">
                 <div class="span12">
-                    <img class="" src="img/jiujiaoyi/step2.png">
+                    <img class="" src="img/jiujiaoyi/step2.jpg">
                 </div>
             </div>
 
@@ -26,13 +26,13 @@
             <p class="marketing-byline">第二次筛选：再筛选出正常BMI值区间的数据</p>
             <div class="row-fluid">
                 <div class="span12">
-                    <img class="" src="img/jiujiaoyi/step3.png">
+                    <img class="" src="img/jiujiaoyi/step3.jpg">
                 </div>
             </div>
             <br>
             <div class="row-fluid">
                 <div class="span12">
-                    <img class="" src="img/jiujiaoyi/step4.png">
+                    <img class="" src="img/jiujiaoyi/step4.jpg">
                 </div>
             </div>
 
