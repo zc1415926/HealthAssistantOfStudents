@@ -21,6 +21,10 @@
         .iframe{
             vertical-align: middle;
         }
+
+        table {
+            font-size: 21px;
+        }
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
