@@ -3,7 +3,7 @@
 <head>
     <meta name="_token" content="{{ csrf_token() }}">
 
-    <title>环肥燕瘦</title>
+    <title>数据的计算与分析</title>
 
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -24,6 +24,10 @@
 
         table {
             font-size: 21px;
+        }
+
+        .footer {
+            margin-top: 0;
         }
     </style>
 
@@ -89,4 +93,10 @@
 @yield('content')
 
 </body>
+<footer class="footer">
+    <div class="container">
+        <p>数据的计算与分析</p>
+        <p>2015</p>
+    </div>
+</footer>
 </html>
