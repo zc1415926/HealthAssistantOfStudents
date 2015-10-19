@@ -12,7 +12,7 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>姓名</th>
+                <th>组别</th>
                 <th>留言</th>
                 <th>操作</th>
             </tr>
