@@ -51,7 +51,7 @@
                         <label class="control-label" for="inputName">组别：</label>
                         <div class="controls">
                             <input class="span6" type="text" id="inputName"
-                                   name="name" placeholder="组别" value="第？组">
+                                   name="name" placeholder="组别" value="第?组">
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@
                         <div class="controls">
                             <textarea id="inputComment" class="span6" name="comment"
                                       rows="5" placeholder="请在这里留言">
-我们组有？个同学BMI值正常，有？个同学BBMI值较低，有？个同学BBMI值较高。
+我们组有?个同学BMI值正常，有?个同学BMI值较低，有?个同学BMI值较高。
 为了使BMI值达标，我们是办法是：
                             </textarea>
                         </div>

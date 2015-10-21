@@ -26,8 +26,8 @@
             font-size: 21px;
         }
 
-        .footer {
-            margin-top: 0;
+        .table th, .table td {
+            line-height: 40px;
         }
     </style>
 
