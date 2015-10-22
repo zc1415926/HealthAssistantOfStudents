@@ -29,6 +29,10 @@
         .table th, .table td {
             line-height: 40px;
         }
+
+        p.lead {
+            line-height: 40px;
+        }
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
