@@ -12,12 +12,10 @@
             <br>
         </div>
         <div class="row">
-            <div class="span8 offset2">
+            <div class="span7 offset3">
                 <p class="lead">1. 以小组为单位，判断组内同学的BMI值是否达标。</p>
-            </div>
-            <div class="span8 offset2">
                 <p class="lead">2. 探讨未达标的原因，并提出“如何达标”的建议。</p></p>
-                <p class="lead">3. 小组长将建议写在留言区，<a href="/comment">点我留言</a>。</p>
+                <p class="lead">3. 小组长将建议写在留言区，<a href="/comment">单击我留言</a>。</p>
             </div>
         </div>
     </div>

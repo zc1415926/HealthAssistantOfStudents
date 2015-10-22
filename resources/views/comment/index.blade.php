@@ -61,7 +61,7 @@
                             <textarea id="inputComment" class="span6" name="comment"
                                       rows="5" placeholder="请在这里留言">
 我们组有?个同学BMI值正常，有?个同学BMI值较低，有?个同学BMI值较高。
-为了使BMI值达标，我们是办法是：
+为了使BMI值达标，我们的办法是：
                             </textarea>
                         </div>
                     </div>
