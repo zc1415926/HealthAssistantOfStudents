@@ -2,22 +2,46 @@
 @section('content')
     <script>
         $(document).ready(function () {
-            $.validator.messages.required = "亲，这里没有填哦！";
+            $.validator.messages.required = "";
 
             $('#formAddComment').validate(
                     {
                         rules: {
-                            'name': "required",
-                            'comment': "required",
+                            'inputGroup': "required",
+                            'inputNormal': "required",
+                            'inputLower': "required",
+                            'inputUpper': "required",
+                            'planOptionsRadios': "required",
                         }
                     }
             );
         });
         function OnCommentSubmit(name, comment)
         {
-            $('p#confirmName').text("姓名：" +　name);
-            $('p#confirmComment').text("留言：" + comment);
-            $('#modalConfirmComment').modal('show');
+
+                $('input#hiddenName').val("第" +　$('input#inputGroup').val() + "组");
+                $('p#confirmName').text("组别：" + $('input#hiddenName').val());
+
+                $('input#hiddenComment').val("我们组有" +　$('input#inputNormal').val() + "个同学BMI值正常，"
+                        +"我们组有" +　$('input#inputLower').val() + "个同学BMI值较低，"
+                        +"我们组有" +　$('input#inputUpper').val() + "个同学BMI值较高。"
+                );
+                var radios=document.getElementsByName("planOptionsRadios");
+                var plan = "";
+                for(var i=0;i<radios.length;i++)
+                {
+                    if(radios[i].checked==true)
+                    {
+                        //alert();
+                        plan = radios[i].value;
+                        break;
+                    }
+                }
+                $('input#hiddenComment').val($('input#hiddenComment').val() + "为了使BMI值达标，我们的方案是：" + plan);
+                $('p#confirmComment').text("留言：" + $('input#hiddenComment').val());
+                $('#modalConfirmComment').modal('show');
+
+
 
         }
         function OnConfirmCommentClicked()
@@ -37,33 +61,76 @@
         @include('flash::message')
 
         <div class="row">
-            <div class="span6 offset3">
+            <div class="span6 offset4">
 
                 <div class="page-header">
-                    <h1>请填写留言</h1>
+                    <h1> </h1>
                 </div>
 
-                <form method="post" action="/comment/add" id="formAddComment">
+                <form method="post" action="/comment/add" id="formAddComment" class="">
 
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <input type="hidden" id="hiddenName" name="name" value="">
+                    <input type="hidden" id="hiddenComment" name="comment" value="">
 
+                    <label class="control-label" for="inputGroup">组别：</label>
                     <div class="control-group">
-                        <label class="control-label" for="inputName">组别：</label>
                         <div class="controls">
-                            <input class="span6" type="text" id="inputName"
-                                   name="name" placeholder="组别" value="第?组">
+                            <div class="input-prepend input-append">
+                                <span class="add-on">第</span>
+                                <input class="span2" id="inputGroup" name="inputGroup" type="text" placeholder="（填入阿拉伯数字）">
+                                <span class="add-on">组</span>
+                            </div>
                         </div>
                     </div>
 
+                    <label class="control-label" for="inputComment">统计：</label>
                     <div class="control-group">
-                        <label class="control-label" for="inputComment">留言：</label>
                         <div class="controls">
-                            <textarea id="inputComment" class="span6" name="comment"
-                                      rows="5" placeholder="请在这里留言">
-我们组有?个同学BMI值正常，有?个同学BMI值较低，有?个同学BMI值较高。
-为了使BMI值达标，我们的办法是：
-                            </textarea>
+                            <div class="input-prepend input-append">
+                                <span class="add-on">我们组有</span>
+                                <input class="span2" id="inputNormal" type="text" placeholder="（填入阿拉伯数字）">
+                                <span class="add-on">个同学BMI值正常</span>
+                            </div>
                         </div>
+                        <div class="controls">
+                            <div class="input-prepend input-append">
+                                <span class="add-on">我们组有</span>
+                                <input class="span2" id="inputLower" type="text" placeholder="（填入阿拉伯数字）">
+                                <span class="add-on">个同学BMI值较低</span>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <div class="input-prepend input-append">
+                                <span class="add-on">我们组有</span>
+                                <input class="span2" id="inputUpper" type="text" placeholder="（填入阿拉伯数字）">
+                                <span class="add-on">个同学BMI值较高</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="control-label" for="">为了使BMI值达标，我觉得最合适的方案是：</label>
+                    <div  class="control-group">
+                        <label class="radio">
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios1" value="坚持运动，荤素搭配，少吃泡面">
+                            坚持运动，荤素搭配，少吃泡面
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios2" value="积极运动，多吃蔬果，少喝可乐">
+                            积极运动，多吃蔬果，少喝可乐
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios3" value="经常运动，作息规律，多吃蔬果">
+                            经常运动，作息规律，多吃蔬果
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios4" value="荤素搭配，少吃油炸食品，不熬夜打游戏">
+                            荤素搭配，少吃油炸食品，不熬夜打游戏
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios5" value="不运动，只吃肉，常吃泡面">
+                            不运动，只吃肉，常吃泡面
+                        </label>
                     </div>
 
                     <div class="control-group">
