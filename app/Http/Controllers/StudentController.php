@@ -38,15 +38,19 @@ class StudentController extends Controller
      */
     public function add(Request $request)
     {
-        $student = Student::create($request->all());
+        $student = Student::create([
+            'num'       => $request['num'],
+            'sex'       => $request['sex'],
+            'height'    => $request['height'] / 100,
+            'weight'    => $request['weight']
+        ]);
 
         if($student)
         {
-            Flash::success("你的信息（" . $student->name . " "
+            Flash::success("你的信息（" . $student->num . "号 "
                 . $student->sex . " "
-                . $student->age . " "
-                . $student->height . " "
-                . $student->weight . "）已经成功添加");
+                . $student->height * 100 . "cm "
+                . $student->weight . "kg）已经成功添加");
         }
         else
         {
@@ -72,12 +76,19 @@ class StudentController extends Controller
         return back();
     }
 
-
     public function export()
     {
         Excel::create('students', function($excel){
             $excel->sheet('student', function($sheet){
-                $sheet->fromArray(Student::select('name', 'age', 'height', 'weight')->get());
+                $sheet->fromArray(Student::select('num', 'sex', 'height', 'weight')->get());
+                $sheet->row(1, array("序号", "性别", "身高（m）", "体重（kg）"));
+                $sheet->setWidth(array(
+                    'A'     =>  15,
+                    'B'     =>  15,
+                    'C'     =>  15,
+                    'D'     =>  15,
+                ));
+
             });
         })->export('xls');
     }

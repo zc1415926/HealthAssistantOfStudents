@@ -14,16 +14,14 @@ class StudentsTableSeeder extends Seeder
         DB::table('students')->insert(
             array(
                 [
-                    'name'      => '王铁柱',
+                    'num'      => '7',
                     'sex'       => '男',
-                    'age'       => '14',
-                    'height'    => '168',
+                    'height'    => '1.68',
                     'weight'    => '65',
                 ],[
-                    'name'      => '田二妞',
+                    'num'      => '19',
                     'sex'       => '女',
-                    'age'       => '13',
-                    'height'    => '158',
+                    'height'    => '1.58',
                     'weight'    => '45',
                 ]
             ));

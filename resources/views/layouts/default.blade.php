@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="_token" content="{{ csrf_token() }}">
 
-    <title>环肥燕瘦</title>
+    <title>数据的计算与分析</title>
 
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,6 +17,36 @@
             width: 854px;
             height: 466px;
             z-index: auto;}
+
+        .iframe{
+            vertical-align: middle;
+        }
+
+        table {
+            font-size: 21px;
+        }
+
+        .table th, .table td {
+            line-height: 40px;
+        }
+
+        p.lead {
+            line-height: 40px;
+            font-size: 30px;
+        }
+
+        label.control-label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .control-group {
+            padding-left: 2em;
+            padding-bottom: 2em;
+        }
+
+
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
@@ -39,7 +69,7 @@
                         <a href="/">课程首页</a>
                     </li>
                     <li class="">
-                        <a href="/qingjingdaoru">情景导入</a>
+                        <a href="/qingjingdaoru">风起云涌</a>
                     </li>
                     <li class="">
                         <a href="/rumenxinfa">入门心法</a>
@@ -54,7 +84,7 @@
                         <a href="/wulindahui">武林大会</a>
                     </li>
                     <li class="">
-                        <a href="/kechengzongjie">课程总结</a>
+                        <a href="/kechengzongjie">一统江湖</a>
                     </li>
                 </ul>
                 <ul class="nav pull-right">
@@ -81,4 +111,10 @@
 @yield('content')
 
 </body>
+<footer class="footer">
+    <div class="container">
+        <p>数据的计算与分析</p>
+        <p>2015</p>
+    </div>
+</footer>
 </html>

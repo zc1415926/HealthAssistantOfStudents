@@ -8,5 +8,5 @@ class Student extends Model
 {
     protected $table = 'students';
 
-    protected $fillable = ['name', 'sex', 'age', 'height', 'weight'];
+    protected $fillable = ['num', 'sex', 'height', 'weight'];
 }

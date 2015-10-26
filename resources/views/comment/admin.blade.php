@@ -12,9 +12,9 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>姓名</th>
+                <th width="70">组别</th>
                 <th>留言</th>
-                <th>操作</th>
+                <th width="50">操作</th>
             </tr>
             </thead>
             <tbody>
@@ -22,9 +22,7 @@
                 <tr><td>{{$comment->name}}</td>
                     <td>{{$comment->comment}}</td>
                     <td><a href="#" role="button" class="icon-remove uk-icon-hover"
-                           onclick="OnDeleteCommentClicked('{{$comment->id}}',
-                                                           '{{$comment->name}}',
-                                                           '{{$comment->comment}}')"></a></td>
+                           onclick="OnDeleteCommentClicked('{{$comment->id}}','{{$comment->name}}','此处省略一万字')"></a></td>
                 </tr>
             @endforeach
             </tbody>

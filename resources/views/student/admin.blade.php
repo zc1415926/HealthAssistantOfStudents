@@ -12,23 +12,21 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>姓名</th>
+                    <th>序号</th>
                     <th>性别</th>
-                    <th>年龄</th>
-                    <th>身高</th>
-                    <th>体重</th>
+                    <th>身高（m）</th>
+                    <th>体重（kg）</th>
                     <th>操作</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach($students as $student)
-                    <tr><td>{{$student->name}}</td>
+                    <tr><td>{{$student->num}}</td>
                         <td>{{$student->sex}}</td>
-                        <td>{{$student->age}}</td>
                         <td>{{$student->height}}</td>
                         <td>{{$student->weight}}</td>
                         <td><a href="#" role="button" class="icon-remove uk-icon-hover"
-                               onclick="OnDeleteStudentClicked('{{$student->id}}','{{$student->name}}')"></a></td>
+                               onclick="OnDeleteStudentClicked('{{$student->id}}','{{$student->num}}')"></a></td>
                     </tr>
                 @endforeach
             </tbody>
@@ -58,12 +56,12 @@
     </div>
 
     <script>
-        function OnDeleteStudentClicked(id, name)
+        function OnDeleteStudentClicked(id, num)
         {
-            $('p#confirmName').text("确实要删除学生“" +　name + "”吗？");
+            $('p#confirmName').text("确实要删除学生“" +　num + "”吗？");
             $('#modalDeleteStudent').modal('show');
             $('input#student-id').val(id);
-            $('input#student-name').val(name);
+            $('input#student-name').val(num);
         }
 
         function OnConfirmDeleteStudentClicked()

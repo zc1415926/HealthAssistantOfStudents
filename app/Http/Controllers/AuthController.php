@@ -19,7 +19,7 @@ class AuthController extends Controller
         {
             Flash::success("Welcome, " . Auth::user()['showname']);
 
-            return back();
+            return redirect('/comment/admin');
         }
         else
         {
