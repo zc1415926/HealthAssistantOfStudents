@@ -8,12 +8,9 @@
     </header>
 
     <div class="container">
-        <div class="marketing">
-            <h1>江湖总结</h1>
-            <br>
-        </div>
         <div class="row">
-            <div class="span6 offset3">
+            <div class="span10 offset1">
+                <br><br>
                 <p class="lead">1. 本课知识点：<br>
                 &emsp;&emsp;通过修炼各级武功，我们学会了：用公式法求BMI值，公式复制和筛选，体会了电子表格的神奇和强大的功能。</p>
                 <p class="lead">2. 树立正确的健康观：<br>

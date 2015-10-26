@@ -32,17 +32,21 @@
 
         p.lead {
             line-height: 40px;
+            font-size: 30px;
         }
 
         label.control-label {
-            font-size: 16px;
+            font-size: 20px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .control-group {
             padding-left: 2em;
             padding-bottom: 2em;
         }
+
+
     </style>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
