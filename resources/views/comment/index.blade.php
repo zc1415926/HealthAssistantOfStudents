@@ -109,27 +109,27 @@
                         </div>
                     </div>
 
-                    <label class="control-label" for="">为了使BMI值达标，我觉得最合适的方案是：</label>
+                    <label class="control-label" for="">为了使BMI值达标，我们觉得可行的方案是：</label>
                     <div  class="control-group">
                         <label class="radio">
-                            <input type="radio" name="planOptionsRadios" id="optionsRadios1" value="坚持运动，荤素搭配，少吃泡面">
-                            坚持运动，荤素搭配，少吃泡面
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios1" value="经常打球、荤素搭配、少吃泡面。">
+                            1.经常打球、荤素搭配、少吃泡面。
                         </label>
                         <label class="radio">
-                            <input type="radio" name="planOptionsRadios" id="optionsRadios2" value="积极运动，多吃蔬果，少喝可乐">
-                            积极运动，多吃蔬果，少喝可乐
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios2" value="经常跑步、多吃蔬果、少喝可乐。">
+                            2.经常跑步、多吃蔬果、少喝可乐。
                         </label>
                         <label class="radio">
-                            <input type="radio" name="planOptionsRadios" id="optionsRadios3" value="经常运动，作息规律，多吃蔬果">
-                            经常运动，作息规律，多吃蔬果
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios3" value="经常跳绳、作息规律、少吃烧烤。">
+                            3.经常跳绳、作息规律、少吃烧烤。
                         </label>
                         <label class="radio">
-                            <input type="radio" name="planOptionsRadios" id="optionsRadios4" value="荤素搭配，少吃油炸食品，不熬夜打游戏">
-                            荤素搭配，少吃油炸食品，不熬夜打游戏
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios4" value="多吃粗粮、积极运动、不熬夜打游戏。">
+                            4.多吃粗粮、积极运动、不熬夜打游戏。
                         </label>
                         <label class="radio">
-                            <input type="radio" name="planOptionsRadios" id="optionsRadios5" value="不运动，只吃肉，常吃泡面">
-                            不运动，只吃肉，常吃泡面
+                            <input type="radio" name="planOptionsRadios" id="optionsRadios5" value="久坐不动、常吃泡面、经常去肯德基。">
+                            5.久坐不动、常吃泡面、经常去肯德基。
                         </label>
                     </div>
 
